@@ -18,7 +18,7 @@
             </div>
     
             <div class="box_span">
-                <span>Digite quantos dólares você quer:</span>
+                <span>Digite quantos reais você tem:</span>
             </div>
     
             <div class="box_inputs">
@@ -41,7 +41,7 @@
             btnCalc.addEventListener("click", function(){
                 const number = document.getElementById("number");
                 const result = document.getElementById("resultado");
-                result.innerHTML = `Para ter "${number.value}" dólares, você precisa ter R$ "${number.value * 5}" reais`;
+                result.innerHTML = `O valor do USD está por 5.00 BRL. <br> Com R$ ${number.value} reais, vocẽ consegue comprar USD ${number.value / 5}`;
             });
 
     </script>
