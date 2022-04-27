@@ -11,7 +11,7 @@ html, body {
 }
 
 body {
-    background-color :#181717;
+    background-color : #0b0b17;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,11 +20,12 @@ body {
 }
 
 fieldset {
-    border-radius: 10px;
-    border: none;
-    padding: 20px;
+    background-color:  #0b0b17 !important;
+    padding: 30px;
     width: 500px;
     height: 500px;
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 10px;
 }
 
 fieldset .box_logo {
@@ -64,7 +65,7 @@ fieldset span {
     padding: 20px;
     color: white;
     background-color: transparent;
-    border: 1px solid #de8c00;
+    border: 1px solid #de8d002f;
     text-transform: uppercase;
     border-radius: 2px;
     font-weight: 900;
