@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../custom/custom.css" type="text/CSS">
+    <title>Calculadora</title>
+    
+</head>
+<body>
+
+    <fieldset id="box_conversor">
+        
+        <div class="box_logo">
+            <img src="../image/calculadora_dolar.png" alt="logo_calculadora" id="image_logo">
+        </div>
+
+        <div class="box_span">
+            <span>Digite quantos dólares você quer:</span>
+        </div>
+
+        <div class="box_inputs">
+            <input type="text" name="number" id="number" placeholder="Digite quantos reais você tem">
+            <input type="submit" value="Calcular" id="btnCalcular">
+        </div>
+        
+        <h2>Resultado:</h2>
+        <div class="box_resultado">
+            <div id="resultado">Por favor, clique em calcular para você saber o resultado.</div>
+        </div>
+    
+    </fieldset>
+    
+    <script>
+
+            const btnCalc = document.getElementById("btnCalcular");
+            
+            btnCalc.addEventListener("click", function(){
+                const number = document.getElementById("number");
+                const result = document.getElementById("resultado");
+                result.innerHTML = `Para ter "${number.value}" dólares, você precisa ter R$ "${number.value * 5}" reais`;
+            });
+
+    </script>
+</body>
+</html>
